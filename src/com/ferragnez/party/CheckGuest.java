@@ -18,7 +18,7 @@ public class CheckGuest {
 			boolean trovato = false;
 			
 			for(counter = 0; counter < guestList.length; counter++ ) {
-				if(nome.equals(guestList[counter])) {
+				if(nome.equalsIgnoreCase(guestList[counter])) {
 					System.out.println("Trovato");
 					
 					break;
@@ -28,7 +28,7 @@ public class CheckGuest {
 			}
 			
 			while(trovato == false && counter < guestList.length) {
-				if(nome.equals(guestList[counter])) {
+				if(nome.equalsIgnoreCase(guestList[counter])) {
 					trovato = true;
 					System.out.println("Trovato");
 					
